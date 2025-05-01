@@ -7,7 +7,7 @@ const Navbar = ({ theme, toggleTheme }) => {
     const navLinks = ['Home', 'Destinations', 'Things to Do', 'Contact'];
 
     return (
-        <header className="bg-[#f5f2ff] dark:bg-gray-800 shadow-md sticky top-0 z-50">
+        <header className="bg-[#f5f2ff] dark:bg-gray-800 shadow-md sticky top-0 z-80">
             <div className="max-w-7xl mx-auto px-4 py-3  flex justify-between items-center">
                 <h1 className="text-2xl cursor-pointer font-bold text-teal-600 dark:text-teal-500">
                     Travel Kenya

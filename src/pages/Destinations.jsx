@@ -22,7 +22,11 @@ const destinations = [
 
 const Destinations = () => {
     return (
-        <section id="destinations" className="py-16 bg-gray-50 dark:bg-gray-900 text-center">
+        <section
+            id="destinations"
+            className="py-16 text-center bg-gray-50 dark:bg-gradient-to-t dark:from-gray-900 dark:via-gray-800 dark:to-gray-600 "
+        >
+
             <h2 className="text-3xl md:text-4xl font-extrabold mb-6 text-gray-800 dark:text-white">
                 Top <span className='text-teal-500 underline'>Destinations</span>
             </h2>
@@ -41,6 +45,7 @@ const Destinations = () => {
                         <div className="p-4">
                             <h3 className="text-xl font-semibold text-gray-800 dark:text-white">{place.name}</h3>
                             <p className="mt-2 text-gray-600 dark:text-gray-300">{place.description}</p>
+                            <button className='px-6 py-1.5 mt-4 bg-teal-500 hover:bg-teal-600 cursor-pointer text-white font-semibold rounded-lg'>View More</button>
                         </div>
                     </div>
                 ))}
