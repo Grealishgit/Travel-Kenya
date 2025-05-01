@@ -41,7 +41,7 @@ const Hero = () => {
                 ))}
             </Slider>
 
-            <div className="absolute top-0 z-50 md:mt-10 -mt-10  h-full flex flex-col items-center justify-center text-white px-4 text-center">
+            <div className="absolute top-0 z-50 md:mt-10 -mt-18  h-full flex flex-col items-center justify-center text-white px-4 text-center">
                 <h2 className="text-4xl md:text-6xl font-extrabold drop-shadow-md">
                     Explore the Beauty of Kenya
                 </h2>
@@ -52,7 +52,7 @@ const Hero = () => {
 
                 {/* Review + Image Preview */}
                 <div className="flex md:flex-row flex-col mt-10 w-full  items-center gap-6">
-                    <div className="md:w-1/2 md:block hidden border rounded-lg font-semibold p-3 border-gray-200 text-left text-lg">
+                    <div className="md:w-1/2 md:block hidden border  rounded-lg font-semibold p-3 border-gray-200 text-left text-lg">
                         "Kenya is a land of breathtaking beauty,
                         where endless savannahs meet snow-capped mountains,
                         and vibrant cultures thrive alongside some of the world’s most majestic wildlife.
@@ -61,14 +61,17 @@ const Hero = () => {
 
                     </div>
                     <div className="md:w-1/2 relative flex flex-col justify-center">
-                        <img src={selectedImage} alt="Preview" className="w-full  max-w-sm  md:h-60 h-60 object-cover rounded-lg shadow-md shadow-black" />
-                        <a
-                            href="#destinations"
-                            className="mt-8 md:block hidden absolute bottom-2 right-30 px-5 py-1 bg-teal-500 hover:bg-teal-700 text-white font-semibold rounded transition"
-                        >
-                            Discover Now
+                        <img
+                            src={selectedImage}
+                            alt="Preview"
+                            className="w-full max-w-md md:h-60 h-60 object-cover rounded-lg shadow-md shadow-black"
+                        />
+                        <a href="#destinations"
+                            className="mt-8 md:block hidden absolute bottom-2 left-3 px-5 py-1 bg-teal-500 hover:bg-teal-700 text-white font-semibold rounded transition"
+                        >Discover Now                          
                         </a>
                     </div>
+
                 </div>
 
                 {/* Clickable Thumbnails */}
