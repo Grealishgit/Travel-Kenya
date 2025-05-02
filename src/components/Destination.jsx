@@ -42,7 +42,7 @@ const Destination = () => {
             )}
 
             {/* Main Content */}
-            <div className="w-full max-w-7xl bg-white dark:bg-gray-600 rounded-lg shadow-gray-600 dark:shadow-white shadow-lg p-6 md:p-10 flex flex-col md:flex-row gap-8">
+            <div className="w-full  bg-white dark:bg-gray-600 rounded-md shadow-gray-600 dark:shadow-white shadow-lg p-4 md:p-8 flex flex-col md:flex-row gap-8">
 
                 {/* Left Side - About the Home */}
                 <div className="md:w-1/2 flex flex-col justify-center">
