@@ -1,23 +1,25 @@
 import React from 'react';
-
+import user1 from '../assets/users/user (1).jpg'
+import user2 from '../assets/users/user (2).jpg'
+import user3 from '../assets/users/user (3).jpg'
 const testimonials = [
     {
         name: 'Jane Mwende',
         role: 'Nairobi, Kenya',
         quote: 'Travel Kenya made my safari trip unforgettable. The service was excellent and the experience was beyond my expectations!',
-        avatar: 'https://randomuser.me/api/portraits/women/44.jpg',
+        avatar: user1,
     },
     {
         name: 'James Otieno',
         role: 'Kisumu, Kenya',
         quote: 'From the beaches in Diani to hiking Mount Kenya, everything was well organized. Highly recommend!',
-        avatar: 'https://randomuser.me/api/portraits/men/32.jpg',
+        avatar: user2,
     },
     {
         name: 'Lucy Wanjiku',
         role: 'Mombasa, Kenya',
         quote: 'An incredible way to discover Kenya. The blog and tips helped us plan the perfect family vacation!',
-        avatar: 'https://randomuser.me/api/portraits/women/68.jpg',
+        avatar: user3,
     },
 ];
 

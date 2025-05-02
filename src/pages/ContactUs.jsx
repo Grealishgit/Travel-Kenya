@@ -15,8 +15,8 @@ const ContactUs = () => {
                 <div className='md:w-1/2 w-full  flex'>
                     <div className='relative flex'>
                         <img src={image2} alt="" className='rounded-lg shadow-lg dark:shadow-white shadow-black h-full w-full' />
-                        <p className='absolute text-md text-white  text-center font-semibold pl-4 bottom-10'>Planning to Travel to the Unkwon and have no idea where to ro how to?
-                            <span className=''> Worry not we are here to help. Fill out the form to get help!</span> </p>
+                        <p className='absolute text-md text-white  text-center font-semibold pl-4 bottom-10'>Planning to Travel to the Unknown wilderness and have no idea where to or how to?
+                            <span className=''> Worry not, we are here to help. Fill out the form to get help!</span> </p>
 
                     </div>
 
