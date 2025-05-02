@@ -44,10 +44,10 @@ const Hero = () => {
 
             <div className="absolute top-0 z-50 md:mt-10 mt-2  h-full flex flex-col items-center justify-center text-white px-4 text-center">
                 <h2 className="text-4xl md:text-6xl font-extrabold drop-shadow-md">
-                    Explore the Beauty of Kenya
+                    Explore the <span className='text-teal-500'>Beauty</span>  of Kenya
                 </h2>
                 <p className="mt-4 text-lg md:text-2xl font-medium drop-shadow">
-                    Discover breathtaking destinations, rich culture, and thrilling adventures.
+                    Discover breathtaking <span className='text-teal-500 font-medium'>destinations, rich culture</span> , and thrilling <span className='text-teal-500'>adventures</span> .
                 </p>
 
 

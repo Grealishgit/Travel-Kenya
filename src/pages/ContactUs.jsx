@@ -6,7 +6,7 @@ const ContactUs = () => {
     return (
         <section id="contact" className=" bg-gray-100 dark:bg-gray-900">
             <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 dark:text-white mb-2">
-                    Get in Touch
+                Get in <span className='text-teal-500'>Touch</span> 
                 </h2>
             <p className="text-center text-gray-600 dark:text-gray-300 mb-2">
                     Have questions, feedback, or want to partner with us? We'd love to hear from you!

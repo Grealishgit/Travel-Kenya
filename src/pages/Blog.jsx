@@ -29,7 +29,7 @@ const Blog = () => {
     return (
         <section id="blog" className="py-16 bg-gray-100 dark:bg-gray-900">
             <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-10 text-gray-800 dark:text-white">
-                Travel Blog
+                Travel <span className='text-teal-500'>Blog</span> 
             </h2>
 
             <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
@@ -40,14 +40,14 @@ const Blog = () => {
                     >
                         <img src={post.image} alt={post.title} className="h-48 w-full object-cover" />
                         <div className="p-4">
-                            <p className="text-sm text-gray-500 dark:text-gray-400">{post.date}</p>
+                            <p className="text-sm text-teal-500 dark:text-teal-400">{post.date}</p>
                             <h3 className="text-xl font-semibold text-gray-800 dark:text-white mt-1">
                                 {post.title}
                             </h3>
                             <p className="text-gray-600 dark:text-gray-300 mt-2">{post.excerpt}</p>
                             <a
                                 href="#"
-                                className="text-green-600 dark:text-green-400 mt-4 inline-block hover:underline"
+                                className="text-teal-600 font-semibold dark:text-teal-400 mt-4 inline-block hover:underline"
                             >
                                 Read more →
                             </a>

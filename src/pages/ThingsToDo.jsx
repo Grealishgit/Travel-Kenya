@@ -24,7 +24,7 @@ const ThingsToDo = () => {
         <section id="thingstodo" className="py-16 bg-white dark:bg-gray-900 text-center">
             <h2 className="text-3xl md:text-4xl font-extrabold mb-6 text-gray-800 dark:text-white">
                 Things
-                to Do in <span className='text-teal-500 underline'>Kenya</span>
+                to Do in <span className='text-teal-500'>Kenya</span>
             </h2>
 
             <div className="grid md:grid-cols-3 gap-8 px-6 max-w-6xl mx-auto">
@@ -39,7 +39,7 @@ const ThingsToDo = () => {
                         <h3 className="text-xl font-bold text-gray-800 dark:text-white">
                             {activity.title}
                         </h3>
-                        <p className="mt-2 text-gray-600 dark:text-gray-300">{activity.description}</p>
+                        <p className="mt-2 text-teal-500 font-semibold ">{activity.description}</p>
                     </div>
                 ))}
             </div>

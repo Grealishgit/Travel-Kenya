@@ -27,7 +27,7 @@ const Testimonials = () => {
     return (
         <section id="testimonials" className="py-16 bg-white dark:bg-gray-900">
             <h2 className="text-3xl md:text-4xl font-extrabold text-center text-gray-800 dark:text-white mb-12">
-                What Travelers Say
+                What <span className='text-teal-500'>Travelers</span>  Say
             </h2>
 
             <div className="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
@@ -43,7 +43,7 @@ const Testimonials = () => {
                                 className="w-12 h-12 rounded-full object-cover"
                             />
                             <div>
-                                <h4 className="text-lg font-semibold text-gray-800 dark:text-white">{t.name}</h4>
+                                <h4 className="text-lg font-semibold text-teal-500 dark:text-teal-500">{t.name}</h4>
                                 <p className="text-sm text-gray-500 dark:text-gray-400">{t.role}</p>
                             </div>
                         </div>

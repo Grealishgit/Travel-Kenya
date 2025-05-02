@@ -30,7 +30,7 @@ const Destinations = () => {
         >
 
             <h2 className="text-3xl md:text-4xl font-extrabold mb-6 text-gray-800 dark:text-white">
-                Top <span className='text-teal-500 underline'>Destinations</span>
+                Top <span className='text-teal-500'>Destinations</span>
             </h2>
 
             <div className="grid md:grid-cols-3 gap-8 px-6 max-w-7xl mx-auto">
@@ -45,7 +45,7 @@ const Destinations = () => {
                             className="w-full h-48 object-cover"
                         />
                         <div className="p-4">
-                            <h3 className="text-xl font-semibold text-gray-800 dark:text-white">{place.name}</h3>
+                            <h3 className="text-xl font-semibold text-teal-500 ">{place.name}</h3>
                             <p className="mt-2 text-gray-600 dark:text-gray-300">{place.description}</p>
                             <button onClick={() => navigate('/destination')} className='px-6 py-1.5 mt-4 bg-teal-500 hover:bg-teal-600 cursor-pointer text-white font-semibold rounded-lg'>View More</button>
                         </div>
