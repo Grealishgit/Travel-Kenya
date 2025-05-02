@@ -13,12 +13,18 @@ const ContactUs = () => {
                 </p>
             <div className='py-10 px-4 gap-10  flex md:flex-row flex-col items-center'>
                 <div className='md:w-1/2 w-full  flex'>
-                    <img src={image2} alt="" className='rounded-lg shadow-lg dark:shadow-white shadow-black h-full w-full' />
+                    <div className='relative flex'>
+                        <img src={image2} alt="" className='rounded-lg shadow-lg dark:shadow-white shadow-black h-full w-full' />
+                        <p className='absolute text-md text-white  text-center font-semibold pl-4 bottom-10'>Planning to Travel to the Unkwon and have no idea where to ro how to?
+                            <span className=''> Worry not we are here to help. Fill out the form to get help!</span> </p>
+
+                    </div>
+
                 </div>
                 <div className='md:w-1/2 w-full flex'>
                     <div className="w-full mx-auto">
 
-                        <form className="bg-white dark:bg-gray-800 border border-black p-8 rounded-lg shadow-lg dark:shadow-white shadow-black grid gap-6">
+                        <form className="bg-white dark:bg-gray-800 border border-black md:p-8 p-4 rounded-lg shadow-lg dark:shadow-white shadow-black grid gap-6">
                     <div className="grid md:grid-cols-2 gap-6">
                         <input
                             type="text"
