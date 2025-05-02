@@ -1,6 +1,7 @@
 import React from 'react';
 import image1 from '../assets/frog.jpg'
 import image2 from '../assets/frog1.jpg'
+import { useNavigate } from 'react-router-dom';
 
 const destinations = [
     {
@@ -21,6 +22,7 @@ const destinations = [
 ];
 
 const Destinations = () => {
+    const navigate = useNavigate();
     return (
         <section
             id="destinations"
@@ -45,7 +47,7 @@ const Destinations = () => {
                         <div className="p-4">
                             <h3 className="text-xl font-semibold text-gray-800 dark:text-white">{place.name}</h3>
                             <p className="mt-2 text-gray-600 dark:text-gray-300">{place.description}</p>
-                            <button className='px-6 py-1.5 mt-4 bg-teal-500 hover:bg-teal-600 cursor-pointer text-white font-semibold rounded-lg'>View More</button>
+                            <button onClick={() => navigate('/destination')} className='px-6 py-1.5 mt-4 bg-teal-500 hover:bg-teal-600 cursor-pointer text-white font-semibold rounded-lg'>View More</button>
                         </div>
                     </div>
                 ))}

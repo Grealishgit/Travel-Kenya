@@ -9,8 +9,9 @@ import image2 from '../assets/images/image (2).jpg';
 import image3 from '../assets/images/image (3).jpg';
 import image4 from '../assets/images/image (4).jpg';
 import image5 from '../assets/images/image (5).jpg';
+import image6 from '../assets/images/image (6).jpg';
 
-const images = [image1, image2, image3, image4, image5];
+const images = [image1, image2, image3, image4, image5, image6];
 
 const Hero = () => {
     const [selectedImage, setSelectedImage] = useState(image1);
@@ -21,7 +22,7 @@ const Hero = () => {
         autoplaySpeed: 10000,
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: true,
+        arrows: false,
         dots: false,
         fade: true,
         pauseOnHover: false,
@@ -35,13 +36,13 @@ const Hero = () => {
                         <img
                             src={img}
                             alt={`slide-${idx}`}
-                            className="w-full h-[90vh] object-cover brightness-65"
+                            className="w-full min-h-screen object-cover brightness-65"
                         />
                     </div>
                 ))}
             </Slider>
 
-            <div className="absolute top-0 z-50 md:mt-10 -mt-18  h-full flex flex-col items-center justify-center text-white px-4 text-center">
+            <div className="absolute top-0 z-50 md:mt-10 mt-2  h-full flex flex-col items-center justify-center text-white px-4 text-center">
                 <h2 className="text-4xl md:text-6xl font-extrabold drop-shadow-md">
                     Explore the Beauty of Kenya
                 </h2>
@@ -75,7 +76,7 @@ const Hero = () => {
                 </div>
 
                 {/* Clickable Thumbnails */}
-                <div className="grid md:grid-cols-5 grid-cols-3 mb-20 gap-2 mt-10">
+                <div className="grid md:grid-cols-6 grid-cols-3 mb-20 gap-2 mt-10">
                     {images.map((img, idx) => (
                         <img
                             key={idx}

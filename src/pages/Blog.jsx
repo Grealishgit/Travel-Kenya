@@ -1,22 +1,26 @@
 import React from 'react';
+import image3 from '../assets/images/image (11).jpg';
+import image4 from '../assets/images/image (10).jpg';
+import image5 from '../assets/images/image (9).jpg';
+import image6 from '../assets/images/image (8).jpg';
 
 const blogPosts = [
     {
         title: 'Top 5 Hidden Gems in Kenya',
         excerpt: 'Discover lesser-known places in Kenya that offer breathtaking experiences without the crowds.',
-        image: 'https://images.unsplash.com/photo-1503220317375-aaad61436b1b?auto=format&fit=crop&w=800&q=80',
+        image: image3,
         date: 'April 10, 2025',
     },
     {
         title: 'Best Time to Visit Kenya',
         excerpt: 'Learn about the different seasons in Kenya and the best months for wildlife, beaches, and adventure.',
-        image: 'https://images.unsplash.com/photo-1549887534-4f7ae71bcd71?auto=format&fit=crop&w=800&q=80',
+        image: image4,
         date: 'March 22, 2025',
     },
     {
         title: 'Cultural Experiences You Can’t Miss',
         excerpt: 'Immerse yourself in authentic Kenyan culture—from Maasai villages to Swahili coastal life.',
-        image: 'https://images.unsplash.com/photo-1600427511830-e6bfe2d55060?auto=format&fit=crop&w=800&q=80',
+        image: image5,
         date: 'February 18, 2025',
     },
 ];

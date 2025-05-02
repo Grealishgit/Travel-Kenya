@@ -13,18 +13,17 @@ const Footer = () => {
                     </p>
                 </div>
 
-                {/* Quick Links */}
-                <div>
-                    <h3 className="text-lg font-semibold mb-2">Quick Links</h3>
+                <div className='md:justify-between justify-around flex'>
+                    <div>
+                        <h3 className="text-lg text-teal-500 dark:text-white font-semibold mb-2">Quick Links</h3>
                     <ul className="space-y-2 text-gray-400">
                         <li><a href="#home" className="hover:text-teal-500">Home</a></li>
                         <li><a href="#destinations" className="hover:text-teal-500">Destinations</a></li>
                         <li><a href="#things" className="hover:text-teal-500">Things to Do</a></li>
                         <li><a href="#contact" className="hover:text-teal-500">Contact</a></li>
                     </ul>
-                </div>
-
-                {/* Social Icons */}
+                    </div>
+                    {/* Social Icons */}
                 <div>
                     <h3 className="text-lg font-semibold mb-2 text-teal-500">Follow Us</h3>
                     <div className="flex gap-4 mt-2">
@@ -39,10 +38,15 @@ const Footer = () => {
                         </a>
                     </div>
                 </div>
+                </div>
+                {/* Quick Links */}
+
+
+
             </div>
 
-            <div className="mt-10 border-t border-gray-700 pt-4 text-center text-gray-500 text-sm">
-                &copy; {new Date().getFullYear()} Travel Kenya. All rights reserved.
+            <div className="mt-10 border-t border-teal-500 pt-4 text-center text-gray-500 text-sm">
+                &copy; {new Date().getFullYear()} Travel Kenya. All rights reserved.Developed by <span className='text-teal-500'>HunterDev!</span> 
             </div>
         </footer>
     );
