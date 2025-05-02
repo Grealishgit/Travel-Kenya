@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { Menu, Moon, ShoppingBag, Sun, X } from 'lucide-react';
+import { Menu, Moon, Phone, ShoppingBag, Sun, X } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = ({ theme, toggleTheme }) => {
     const [isOpen, setIsOpen] = useState(false);
     const [active, setActive] = useState('Home')
-    const navLinks = ['Home', 'Destinations', 'Things to Do', 'Contact'];
-
+    const navLinks = ['Home', 'Destinations', 'Things to Do', 'Contact', 'Blog'];
+    const navigate = useNavigate();
     return (
         <header className="bg-[#f5f2ff] dark:bg-gray-800 shadow-md sticky top-0 z-80">
             <div className="max-w-7xl mx-auto px-4 py-3  flex justify-between items-center">
@@ -42,10 +43,12 @@ const Navbar = ({ theme, toggleTheme }) => {
 
                     ) : (
 
-                        <Moon onClick={toggleTheme} className="hidden cursor-pointer md:inline-block p-1 w-7 h-7  text-teal-500 rounded-full hover:text-teal-700" />
+                            <Moon onClick={toggleTheme} className="hidden cursor-pointer md:inline-block p-1 w-7 h-7  text-teal-500 rounded-full hover:text-teal-700" />
+
                     )
                     }
                     <ShoppingBag className="hidden cursor-pointer md:inline-block text-teal-500 p-1 w-7 h-7  rounded-full hover:text-teal-700" />
+                    <Phone onClick={() => navigate('/contact')} className="hidden cursor-pointer md:inline-block text-teal-500 p-1 w-7 h-7  rounded-full hover:text-teal-700" />
                 </div>
                 {/* Mobile menu toggle */}
                 <div className="flex md:hidden items-center gap-3">
